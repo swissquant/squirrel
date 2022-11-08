@@ -1,0 +1,5 @@
+# Squirrel
+
+## Getting started
+
+TODO
