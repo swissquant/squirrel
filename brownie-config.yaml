@@ -11,3 +11,5 @@ compiler:
             - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7"
             - "@uniswap/v3-core=uniswap/v3-core@1.0.0"
             - "@uniswap/v3-periphery=uniswap/v3-periphery@1.1.1"
+
+dotenv: .env
