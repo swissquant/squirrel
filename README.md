@@ -1,6 +1,6 @@
 # :chipmunk: Squirrel
 
-Framework for volatility trading on Squeeth
+Framework for volatility trading on Squeeth brought to you by the friendly apes behind DegenScore
 
 Features:
 - Crab - Create and manage a short vol position (TODO)
