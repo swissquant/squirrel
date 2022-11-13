@@ -8,7 +8,7 @@ import "@squeeth/packages/hardhat/contracts/core/Controller.sol";
 contract Squirrel {
     Controller controller;
 
-    function shortPowerPerp() public returns (uint256) {
+    function shortPowerPerp() public returns (address) {
         return controller.shortPowerPerp();
     }
 }
