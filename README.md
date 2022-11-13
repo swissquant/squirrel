@@ -1,5 +1,11 @@
 # Squirrel
 
+Framework for volatility trading on Squeeth
+
+Features
+- Mint and sell desired amount of oSQTH in one call
+- Close vault in one call
+
 ## Getting started
 
 TODO
