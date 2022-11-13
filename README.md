@@ -1,4 +1,4 @@
-# Squirrel
+# :chipmunk: Squirrel
 
 Framework for volatility trading on Squeeth
 
