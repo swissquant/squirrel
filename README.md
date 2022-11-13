@@ -2,9 +2,11 @@
 
 Framework for volatility trading on Squeeth
 
-Features
-- Mint and sell desired amount of oSQTH in one call
-- Close vault in one call
+Features:
+- Crab - Create and manage a short vol position (TODO)
+- Reverse Crab - Create and manage long vol position (TODO)
+- Close vault in one call (TODO)
+- Reporting on your vault and positions (TODO)
 
 ## Getting started
 
