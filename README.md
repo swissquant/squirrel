@@ -12,4 +12,4 @@ TODO
 
 2. Deploy
 
-``` brownie run deploy.py - network goerli ```
+``` brownie run deploy.py --network goerli ```
