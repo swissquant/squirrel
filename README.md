@@ -12,6 +12,10 @@ Features:
 
 TODO
 
+## Compiling
+
+``` brownie compile ```
+
 ## Deploying
 
 1. Add your deployment account
