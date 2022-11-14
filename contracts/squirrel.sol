@@ -12,14 +12,26 @@ contract Squirrel {
 
     uint256 constant ONE_ONE = 1e36;
 
-    address public immutable oracle = 0x65D66c76447ccB45dAf1e8044e918fA786A483A1;
-    address public immutable ethQuoteCurrencyPool = 0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8;
-    address public immutable weth = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-    address public immutable quoteCurrency = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+    address public immutable oracle; // = 0x65D66c76447ccB45dAf1e8044e918fA786A483A1;
+    address public immutable ethQuoteCurrencyPool; // = 0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8;
+    address public immutable weth; // = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+    address public immutable quoteCurrency; // = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
     uint32 public constant TWAP_PERIOD = 420 seconds;
 
     Controller controller = Controller(0x50f3D0826d4E3c3d49007DBa664727B9885Dd734);
     mapping(uint256 => VaultLib.Vault) public vaults;
+
+    constructor(
+        address _oracle,
+        address _ethQuoteCurrencyPool,
+        address _weth,
+        address _quoteCurrency
+    ) {
+        oracle = _oracle;
+        ethQuoteCurrencyPool = _ethQuoteCurrencyPool;
+        weth = _weth;
+        quoteCurrency = _quoteCurrency;
+    }
 
     function scaledEthPrice() public view returns (uint256) {
         uint256 _scaledEthPrice = Power2Base._getScaledTwap(
